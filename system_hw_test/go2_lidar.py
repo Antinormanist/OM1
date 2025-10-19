@@ -107,17 +107,9 @@ class Custom:
         z = arr[:, 2]
         intensity = arr[:, 3]
 
-        print("min(x): ", min(x))
-        print("max(x): ", max(x))
-
-        print("min(y): ", min(y))
-        print("max(y): ", max(y))
-
-        print("min(z): ", min(z))
-        print("max(z): ", max(z))
-
-        print("min(intensity): ", min(intensity))
-        print("max(intensity): ", max(intensity))
+        for letter, value in [["x", x], ["y", y], ["z", z], ["intensity", intensity]]:
+            print(f"min({letter}): ", value)
+            print(f"max({letter}): ", value)
 
         print("len(x): ", len(x))
         print("len(y): ", len(y))
